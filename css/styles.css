@@ -1,0 +1,141 @@
+/*
+1. Posicionamiento
+2. Modelo de caja(box model)
+3. Tipografía
+4. Visuales
+5. Otros
+Agregando estilos:
+Posicionamiento --> static, absolute, relative, fixed
+Modelo de caja (Box model) --> margin, border, padding, content
+Tipografía --> tipos, tamaños de fuente, etc
+Estilos visuales --> box-shadow, border-radius, gradient, etc
+Otros --> reglas CSS y más
+*/
+:root {
+    --main-primary-color: #000;
+    --main-seconday-color: #fff;
+    --main-tertiary-color: #fa4;
+    --main-quaternary-color: #555;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 2rem;
+    font-family: 'KoHo', sans-serif, verdana;
+    src: url('../css/fonts/KoHo/KoHo-Regular.ttf');
+}
+a {
+    color: var(--main-primary-color);
+}
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1fr;
+    grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+/*NAV*/
+#nav {
+    grid-area: nav;
+}
+ul {
+    display: flex;
+    background-color: var(--main-primary-color);
+}
+#nav li {
+    padding: 2rem 0;
+}
+#nav a {
+    padding: 0 1.4rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--main-tertiary-color);
+}
+
+/*HEADER*/
+#header {
+    grid-area: header;
+}
+.header__title--center {    
+    text-align: center;
+    background-color: var(--main-primary-color);
+    color: var(--main-seconday-color);
+    padding: 5rem 0;
+}
+.header__title--center h1{
+    font-size: 3rem;
+}
+.header__title--center h2 {
+    font-size: 2rem;
+}
+.header__title--center span {
+    background-color: var(--main-tertiary-color);
+    color: var(--main-primary-color);
+    border-radius: .5rem;
+}
+
+/*MAIN*/
+#main {
+    grid-area: main;
+    color: var(--main-primary-color);
+}
+.article__section {
+    padding: 1rem;
+}
+article {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+figure {
+    margin: 2rem 0;
+}
+figure .landscape{
+    max-width: 30rem;
+    border: .1rem solid var(--main-primary-color);
+}
+.credits a {
+    color: var(--main-tertiary-color);
+    text-decoration: underline;
+}
+
+.articles .article__title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.articles .article__content--text {
+    font-size: 2rem;    
+    padding: 2rem 0;
+    color: var(--main-quaternary-color);
+}
+.author span {
+    border-radius: .5rem;
+    background-color: var(--main-tertiary-color);
+}
+
+/*FOOTER*/
+#footer {
+    grid-area: footer;
+    background-color: var(--main-primary-color);
+    padding: 5rem 1rem;
+    color: var(--main-seconday-color);
+}
+#footer a {
+    color: var(--main-seconday-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
