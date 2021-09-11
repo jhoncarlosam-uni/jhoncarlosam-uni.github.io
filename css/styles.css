@@ -30,7 +30,6 @@ html {
 body {
     font-size: 2rem;
     font-family: 'KoHo', sans-serif, verdana;
-    src: url('../css/fonts/KoHo/KoHo-Regular.ttf');
 }
 a {
     color: var(--main-primary-color);
@@ -47,6 +46,7 @@ a {
 /*NAV*/
 #nav {
     grid-area: nav;
+    font-family: 'Andada Pro', serif;
 }
 ul {
     display: flex;
@@ -56,7 +56,7 @@ ul {
     padding: 2rem 0;
 }
 #nav a {
-    padding: 0 1.4rem;
+    padding: 0 .3rem;
     font-weight: bold;
     font-size: 1.8rem;
     color: var(--main-tertiary-color);
@@ -65,6 +65,7 @@ ul {
 /*HEADER*/
 #header {
     grid-area: header;
+    font-family: 'Bebas Neue', cursive;
 }
 .header__title--center {    
     text-align: center;
@@ -74,9 +75,12 @@ ul {
 }
 .header__title--center h1{
     font-size: 3rem;
+    font-weight: bold;
 }
 .header__title--center h2 {
     font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
 }
 .header__title--center span {
     background-color: var(--main-tertiary-color);
@@ -88,6 +92,7 @@ ul {
 #main {
     grid-area: main;
     color: var(--main-primary-color);
+    font-family: 'Andada Pro', serif;
 }
 .article__section {
     padding: 1rem;
@@ -131,6 +136,7 @@ figure .landscape{
     background-color: var(--main-primary-color);
     padding: 5rem 1rem;
     color: var(--main-seconday-color);
+    font-family: 'Andada Pro', serif;
 }
 #footer a {
     color: var(--main-seconday-color);
@@ -138,4 +144,11 @@ figure .landscape{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+blockquote { /*CHANGE FONT*/
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    
 }
