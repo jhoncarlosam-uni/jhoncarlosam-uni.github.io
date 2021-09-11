@@ -95,10 +95,7 @@ ul {
     font-family: 'Andada Pro', serif;
 }
 .article__section {
-    line-height: 3rem;
-    padding: 0 30rem;
-    text-align: left;
-    margin: 5rem 0;
+    padding: 1rem;
 }
 article {
     padding: 2rem 0;
