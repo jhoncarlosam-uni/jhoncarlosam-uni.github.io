@@ -85,7 +85,7 @@ nav.scrollmenu a:hover {
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem;
-  letter-space: .1rem;
+  letter-spacing: .1rem;
 }
 .header__title--center span {
   background-color: var(--main-tertiary-color);
