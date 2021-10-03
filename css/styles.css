@@ -1,0 +1,165 @@
+/*
+1. Posicionamiento
+2. Modelo de caja(box model)
+3. Tipografía
+4. Visuales
+5. Otros
+Agregando estilos:
+Posicionamiento --> static, absolute, relative, fixed
+Modelo de caja (Box model) --> margin, border, padding, content
+Tipografía --> tipos, tamaños de fuente, etc
+Estilos visuales --> box-shadow, border-radius, gradient, etc
+Otros --> reglas CSS y más
+*/
+:root {
+  --main-primary-color: #000;
+  --main-seconday-color: #fff;
+  --main-tertiary-color: #fa4;
+  --main-quaternary-color: #555;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+  font-family: "KoHo", sans-serif, verdana;
+}
+a {
+  color: var(--main-primary-color);
+}
+.container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.4fr 2.2fr 1fr;
+  grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+/*NAV*/
+#nav {
+  grid-area: nav;
+  font-family: "Andada Pro", serif;
+}
+nav.scrollmenu {
+  background-color: #000000;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+nav.scrollmenu a {
+  display: inline-block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 24px;
+  text-decoration: none;
+}
+
+nav.scrollmenu a:hover {
+  background-color: #777777;
+}
+
+/*HEADER*/
+#header {
+  grid-area: header;
+  font-family: "Bebas Neue", cursive;
+}
+.header__title--center {
+  text-align: center;
+  background-color: var(--main-primary-color);
+  color: var(--main-seconday-color);
+  padding: 5rem 0;
+}
+.header__title--center h1 {
+  font-size: 4.5rem;
+  letter-spacing: 0.2rem;
+}
+.header__title--center h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  letter-spacing: .1rem;
+}
+.header__title--center span {
+  background-color: var(--main-tertiary-color);
+  color: var(--main-primary-color);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+}
+
+/*MAIN*/
+#main {
+  grid-area: main;
+  color: var(--main-primary-color);
+  font-family: "Andada Pro", serif;
+}
+.article__section {
+  padding: 2rem 2rem;
+}
+.article__section blockquote {
+  /*CHANGE FONT*/
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+  color: #bd1616;
+  text-transform: uppercase;
+  margin: 3rem 0;
+}
+
+.article__section p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+article {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+figure .landscape {
+  max-width: 28rem;
+  border: 0.1rem solid var(--main-primary-color);
+}
+.credits a {
+  color: var(--main-tertiary-color);
+  text-decoration: underline;
+}
+
+.articles .article__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.articles .article__content--text {
+  font-size: 2rem;
+  padding: 2rem 0;
+  color: var(--main-quaternary-color);
+}
+.author span {
+  border-radius: 0.5rem;
+  background-color: var(--main-tertiary-color);  
+}
+
+/*FOOTER*/
+#footer {
+  grid-area: footer;
+  background-color: var(--main-primary-color);
+  padding: 5rem 1rem;
+  color: var(--main-seconday-color);
+  font-family: "Andada Pro", serif;
+}
+#footer a {
+  color: var(--main-seconday-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
