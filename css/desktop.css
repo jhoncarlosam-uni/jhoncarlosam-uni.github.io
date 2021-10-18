@@ -50,3 +50,7 @@ figure {
 .section__img--margin {
   margin: 1rem 30rem;
 }
+.poems__img {
+  background-image: url(../assets/img/back-womans.jpg);
+  min-height: 100vh;
+}
