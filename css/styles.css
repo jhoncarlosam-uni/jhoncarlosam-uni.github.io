@@ -19,17 +19,17 @@ Otros --> reglas CSS y más
 }
 * {
   box-sizing: border-box;
+  list-style: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style: none;
 }
 html {
   font-size: 62.5%;
 }
 body {
-  font-size: 2rem;
   font-family: "KoHo", sans-serif, verdana;
+  font-size: 2rem;
 }
 a {
   color: var(--main-primary-color);
@@ -45,122 +45,130 @@ a {
 }
 /*NAV*/
 #nav {
-  grid-area: nav;
   font-family: "Andada Pro", serif;
+  grid-area: nav;
 }
 nav.scrollmenu {
   background-color: #000000;
   overflow: auto;
   white-space: nowrap;
 }
-
 nav.scrollmenu a {
-  display: inline-block;
   color: #FFFFFF;
-  text-align: center;
+  display: inline-block;
   padding: 24px;
+  text-align: center;
   text-decoration: none;
 }
-
 nav.scrollmenu a:hover {
   background-color: #777777;
 }
-
 /*HEADER*/
 #header {
-  grid-area: header;
   font-family: "Bebas Neue", cursive;
+  grid-area: header;
 }
-.header__title--center {
-  text-align: center;
+#header__title--center {
   background-color: var(--main-primary-color);
   color: var(--main-seconday-color);
   padding: 5rem 0;
+  text-align: center;
 }
-.header__title--center h1 {
+#header__title--center h1 {
   font-size: 4.5rem;
   letter-spacing: 0.2rem;
 }
-.header__title--center h2 {
+#header__title--center h2 {
   font-size: 2rem;
   font-weight: bold;
-  padding: 1rem;
   letter-spacing: .1rem;
+  padding: 1rem;
 }
-.header__title--center span {
+#header__title--center span {
   background-color: var(--main-tertiary-color);
-  color: var(--main-primary-color);
   border-radius: 0.5rem;
+  color: var(--main-primary-color);
   padding: 0 1rem;
 }
-
 /*MAIN*/
 #main {
-  grid-area: main;
   color: var(--main-primary-color);
   font-family: "Andada Pro", serif;
+  grid-area: main;
 }
+.about__img--profile-middle-body img{
+  width: 100%;
+}
+.poems__img--post img{
+  width: 100%;
+}
+
 .article__section {
   padding: 2rem 2rem;
 }
+.article__section h3 {
+  font-size: 3rem;
+}
+.article__section h2 {
+  font-size: 3rem;
+}
 .article__section blockquote {
   /*CHANGE FONT*/
+  color: #bd1616;
+  font-family: "Bebas Neue", cursive;
   font-size: 3.2rem;
   font-weight: bold;
-  font-family: "Bebas Neue", cursive;
-  color: #bd1616;
-  text-transform: uppercase;
   margin: 3rem 0;
+  text-transform: uppercase;
 }
-
 .article__section p {
   font-size: 1.6rem;
   line-height: 1.5;
   margin: 2rem 0;
 }
 article {
-  padding: 2rem 0;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  padding: 2rem 0;
 }
 figure .landscape {
   border: 0.1rem solid var(--main-primary-color);
   width: 100%;
+}
+.credits{
   margin: 3rem 0;
 }
 .credits a {
   color: var(--main-tertiary-color);
   text-decoration: underline;
 }
-
 .articles .article__title {
   font-size: 2.5rem;
   font-weight: bold;
 }
 .articles .article__content--text {
+  color: var(--main-quaternary-color);
   font-size: 2rem;
   padding: 2rem 0;
-  color: var(--main-quaternary-color);
 }
 .author span {
-  border-radius: 0.5rem;
   background-color: var(--main-tertiary-color);  
+  border-radius: 0.5rem;
 }
-
 /*FOOTER*/
 #footer {
-  grid-area: footer;
   background-color: var(--main-primary-color);
-  padding: 5rem 1rem;
   color: var(--main-seconday-color);
   font-family: "Andada Pro", serif;
+  grid-area: footer;
+  padding: 5rem 1rem;
 }
 #footer a {
+  align-items: center;
   color: var(--main-seconday-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }

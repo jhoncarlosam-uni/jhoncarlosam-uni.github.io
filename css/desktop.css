@@ -1,10 +1,11 @@
-.header__title--center {
+/*HEADER*/
+#header__title--center {
   padding: 7.2rem 0;
 }
-.header__title--center h1 {
+#header__title--center h1 {
   font-size: 7.5rem;
 }
-.header__title--center h2 {
+#header__title--center h2 {
   font-size: 3rem;
   letter-spacing: 0.3rem;
   width: calc(90% - 50px);
@@ -40,6 +41,12 @@ article {
   color: #000000;
 }
 figure .landscape {
-  max-width: 40rem;
   border: 0.1rem solid var(--main-primary-color);
+}
+figure {
+  width: 124rem;
+}
+/*MAIN*/
+.section__img--margin {
+  margin: 1rem 30rem;
 }
