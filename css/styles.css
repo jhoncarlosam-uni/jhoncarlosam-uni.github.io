@@ -16,6 +16,7 @@ Otros --> reglas CSS y más
   --main-seconday-color: #fff;
   --main-tertiary-color: #fa4;
   --main-quaternary-color: #555;
+  --text-ad: #7C5E22;
 }
 * {
   box-sizing: border-box;
@@ -123,7 +124,6 @@ nav.scrollmenu a:hover {
   font-size: 3rem;
 }
 .article__section blockquote {
-  /*CHANGE FONT*/
   color: #bd1616;
   font-family: "Bebas Neue", cursive;
   font-size: 3.2rem;
@@ -151,7 +151,7 @@ figure .landscape {
   margin: 3rem 0;
 }
 .credits a {
-  color: var(--main-tertiary-color);
+  color: var(--main-primary-color);
   text-decoration: underline;
 }
 .articles .article__title {
