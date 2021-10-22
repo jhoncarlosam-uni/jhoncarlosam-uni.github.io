@@ -174,11 +174,15 @@ figure .landscape {
   font-family: "Andada Pro", serif;
   grid-area: footer;
   padding: 5rem 1rem;
-}
-#footer a {
-  align-items: center;
-  color: var(--main-seconday-color);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+#footer p {
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+#footer a {
+  align-self: center;
+  color: var(--main-seconday-color);
+  font-size: 1.9rem;
 }

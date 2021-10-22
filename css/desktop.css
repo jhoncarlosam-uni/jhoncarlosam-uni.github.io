@@ -57,3 +57,8 @@ figure {
 .poems__img-reference--margin {
   margin: 1rem 30rem;
 }
+/*FOOTER*/
+#footer {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
