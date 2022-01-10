@@ -18,7 +18,7 @@ Puedes verlo en acción [aquí mismo](https://jhoncarlosam.me).
 
 ### Poemas
 
-![Poemas](https://jhoncarlosam.me/assets/img/readme-poemas.png).
+![Poemas](https://jhoncarlosam.me/assets/img/readme-poems.png).
 
 ### Conóceme
 
