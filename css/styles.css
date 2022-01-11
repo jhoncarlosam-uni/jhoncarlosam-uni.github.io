@@ -103,8 +103,13 @@ nav.scrollmenu a:hover {
 .poems__img--post img{
   width: 100%;
 }
+.article-js__img {
+  background-image: url(../assets/img/blake-connally-small.jpg);
+}
 .poems__img {
   background-image: url(../assets/img/back-womans-small.jpg);
+}
+.article__img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

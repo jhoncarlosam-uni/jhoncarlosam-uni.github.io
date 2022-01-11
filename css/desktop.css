@@ -4,6 +4,7 @@
 }
 #header__title--center h1 {
   font-size: 7.5rem;
+  padding: 0 20rem;
 }
 #header__title--center h2 {
   font-size: 3rem;
@@ -52,6 +53,10 @@ figure {
 }
 .poems__img {
   background-image: url(../assets/img/back-womans.jpg);
+  min-height: 100vh;
+}
+.article-js__img {
+  background-image: url(../assets/img/blake-connally-larger.jpg);
   min-height: 100vh;
 }
 .poems__img-reference--margin {
